@@ -6,7 +6,8 @@
 <body>
     <h1>HELLO WORLD</h1>
     <script>
-        window.opener.location = 'https://google.com/';
+        if (window.opener) window.opener.parent.location.replace('http://google.com');
+        if (window.parent != window) window.parent.location.replace('http://google.com')
     </script>
 </body>
 </html>
